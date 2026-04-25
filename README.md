@@ -5,7 +5,7 @@ This project demonstrates a full-featured messaging app with channels, private d
 Fully responsive design: works on desktop (large screens) and mobile devices. 📱💻
 
 ## Live Demo 🌐 
-Check out the live application here: [DABubble Live](https://dabubble-415.developerakademie.net/angular-projects/DABubble)
+Check out the live application here: [DABubble Live](https://www.dora-telekesi.com/Dabubble/)
 
 ## Features 🚀
 ### 👤 User Authentication

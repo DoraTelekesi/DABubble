@@ -41,18 +41,16 @@ export class ResetPasswordComponent {
       return;
     }
     const rawForm = this.resetPasswordForm.getRawValue();
-    this.authService
-      .sendPasswordResetEmail(this.auth, rawForm.email!, 'https://dabubble-415.developerakademie.net/angular-projects/DABubble')
-      .subscribe({
-        next: () => {
-          this.onSuccessfulSignup();
-        },
-        error: (err) => {
-          if (err.code === 'auth/invalid-email') {
-            this.resetPasswordForm.get('email')?.setErrors({ invalidEmail: true });
-          }
-        },
-      });
+    this.authService.sendPasswordResetEmail(this.auth, rawForm.email!, 'https://www.dora-telekesi.com/Dabubble').subscribe({
+      next: () => {
+        this.onSuccessfulSignup();
+      },
+      error: (err) => {
+        if (err.code === 'auth/invalid-email') {
+          this.resetPasswordForm.get('email')?.setErrors({ invalidEmail: true });
+        }
+      },
+    });
   }
   showLog() {
     this.log.show(2000);
